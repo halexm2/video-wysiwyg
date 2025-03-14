@@ -1,0 +1,19 @@
+<!--
+/**
+ * @category    Halex
+ * @package     Halex\VideoWysiwyg
+ * @author      Aleksejs Prjahins <aleksejs.prjahins@gmail.com>
+ * @license     http://opensource.org/licenses/OSL-3.0 The Open Software License 3.0 (OSL-3.0)
+ */
+-->
+<div class="pagebuilder-content-type pagebuilder-image type-nested"
+     event="{ mouseover: onMouseOver, mouseout: onMouseOut }, mouseoverBubble: false">
+    <render args="getOptions().template"></render>
+    <div attr="data.main.attributes"
+         css="data.main.css">
+        <video class="preview-video"
+               attr="getViewportImageData().attributes" class="preview-video" css="getViewportImageData().css">
+            <source attr="getViewportImageData().attributes()">
+        </video>
+    </div>
+</div>
