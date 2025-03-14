@@ -20,3 +20,9 @@ Media Gallery and insert them to the pagebuilder content (CMS Blocks, CMS Pages)
 composer require halexm2/video-wysiwyg
 bin/magento setup:upgrade
 ```
+## Screenshots
+### Content Type Configuration
+![Content Type Configuration](docs/img/content_type_configuration.png)
+
+### Content Type Preview
+![Content Type Preview](docs/img/content_type_preview.png)
