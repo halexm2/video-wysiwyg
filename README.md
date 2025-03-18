@@ -4,7 +4,7 @@
 * Magento 2.0.0-2.4.x
 
 ## Overview
-Let your administrators upload .mp4 and .mov videos using 
+Let your administrators upload videos using 
 Media Gallery and insert them to the pagebuilder content (CMS Blocks, CMS Pages) using new content type "Upload Video"
 
 ## Main Features
@@ -13,7 +13,10 @@ Media Gallery and insert them to the pagebuilder content (CMS Blocks, CMS Pages)
 * Configure Autoplay, Controls and Mute options using Pagebuilder
 * Separated viewport configuration - Mobile and Desktop view
 * 1:1 Content type preview in pagebuilder
-* Absolutely free
+
+## Supported Formats
+* mp4
+* mov
 
 ## Installation
 ```bash
@@ -24,5 +27,8 @@ bin/magento setup:upgrade
 ### Content Type Configuration
 ![Content Type Configuration](docs/img/content_type_configuration.png)
 
-### Content Type Preview
+### Content Type PageBuilder Preview
 ![Content Type Preview](docs/img/content_type_preview.png)
+
+### Content Type Frontend Preview
+![Content Type Preview](docs/img/content_type_frontend.png)
