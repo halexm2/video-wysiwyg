@@ -79,26 +79,4 @@ class Storage
 
         return [$source, $keepRatio];
     }
-
-    /**
-     * @param SourceStorage $subject
-     * @param \Closure $proceed
-     * @param $source
-     * @param $keepRatio
-     *
-     * @return mixed
-     * @SuppressWarnings(PHPMD.UnusedFormalParameter)
-     */
-    public function aroundResizeFile(
-        SourceStorage $subject,
-        \Closure      $proceed,
-                      $source,
-                      $keepRatio = true
-    ) {
-        if (in_array(pathinfo($source, PATHINFO_EXTENSION), Url::VIDEO_EXTENSIONS)) {
-            return $proceed($source, $keepRatio);
-        }
-
-        return $proceed($source, $keepRatio);
-    }
 }
